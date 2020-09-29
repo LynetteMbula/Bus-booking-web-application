@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Booking</title>
-    <link rel="stylesheet" href="styles/booking.css">
-</head>
-<body>
-
-
+    <link rel="stylesheet" href="styles/booking.css" />
+  </head>
+  <body>
     <div class="nav-bar">
-    <ul>
+      <ul>
         <li><a href="default.asp">Home</a></li>
         <li><a href="news.asp">News</a></li>
         <li><a href="contact.asp">Contact</a></li>
@@ -18,65 +16,143 @@
       </ul>
     </div>
     <div class="page-body">
-    Booking details
+      Booking details
 
-    <h4>Disclaimer:</h4>
-    <p>Children below three (3) years may travel free of charge provided the child is accompanied by an adult, however no seat will be allocated solely for the child. For children three (3) years and above, you are required to purchase a boarding ticket.</p>
-    
-        <div class="seats-view">
-            <!-- templating will be used to generate this later -->
+      <h4>Disclaimer:</h4>
+      <p>
+        Children below three (3) years may travel free of charge provided the
+        child is accompanied by an adult, however no seat will be allocated
+        solely for the child. For children three (3) years and above, you are
+        required to purchase a boarding ticket.
+      </p>
 
-                <ul>
-                    <li><button id="seat1">Seat</button></li>
-                    <li><button>Seat</button></li>
-                    <li><button>Seat</button></li>
-                    <li><button>Seat</button></li>
-                    <li><button>Seat</button></li>
-                    <li><button>Seat</button></li>
-                    <li><button>Seat</button></li>
-                    <li><button>Seat</button></li>
-                    <li><button>Seat</button></li>
-                </ul>
+      <div class="seats-view">
+        <!-- templating will be used to generate this later -->
 
-                <ul>
-                    <li><button>Seat</button></li>
-                    <li><button>Seat</button></li>
-                    <li><button>Seat</button></li>
-                    <li><button>Seat</button></li>
-                    <li><button>Seat</button></li>
-                    <li><button>Seat</button></li>
-                    <li><button>Seat</button></li>
-                    <li><button>Seat</button></li>
-                    <li><button>Seat</button></li>
-                </ul>
+        <!-- onclick="func()" -->
+        <ul class="col1">
+          <li>
+            <button
+              class="available"
+              id="seat1"
+              onclick="changeToSelected(this.id)"
+            >
+              Seat
+            </button>
+          </li>
+          <li>
+            <button
+              class="available"
+              id="seat2"
+              onclick="changeToSelected(this.id)"
+            >
+              Seat
+            </button>
+          </li>
+          <li>
+            <button
+              class="available"
+              id="seat3"
+              onclick="changeToSelected(this.id)"
+            >
+              Seat
+            </button>
+          </li>
+          <li>
+            <button
+              class="available"
+              id="seat4"
+              onclick="changeToSelected(this.id)"
+            >
+              Seat
+            </button>
+          </li>
+          <li>
+            <button
+              class="available"
+              id="seat5"
+              onclick="changeToSelected(this.id)"
+            >
+              Seat
+            </button>
+          </li>
+          <li>
+            <button
+              class="available"
+              id="seat6"
+              onclick="changeToSelected(this.id)"
+            >
+              Seat
+            </button>
+          </li>
+          <li>
+            <button
+              class="available"
+              id="seat7"
+              onclick="changeToSelected(this.id)"
+            >
+              Seat
+            </button>
+          </li>
+          <li>
+            <button
+              class="available"
+              id="seat8"
+              onclick="changeToSelected(this.id)"
+            >
+              Seat
+            </button>
+          </li>
+          <li>
+            <button
+              class="available"
+              id="seat9"
+              onclick="changeToSelected(this.id)"
+            >
+              Seat
+            </button>
+          </li>
+        </ul>
 
-                <ul>
-                    <li><button>Seat</button></li>
-                    <li><button>Seat</button></li>
-                    <li><button>Seat</button></li>
-                    <li><button>Seat</button></li>
-                    <li><button>Seat</button></li>
-                    <li><button>Seat</button></li>
-                    <li><button>Seat</button></li>
-                    <li><button>Seat</button></li>
-                    <li><button>Seat</button></li>
-                </ul>
+        <ul>
+          <li><button>Seat</button></li>
+          <li><button>Seat</button></li>
+          <li><button>Seat</button></li>
+          <li><button>Seat</button></li>
+          <li><button>Seat</button></li>
+          <li><button>Seat</button></li>
+          <li><button>Seat</button></li>
+          <li><button>Seat</button></li>
+          <li><button>Seat</button></li>
+        </ul>
 
-                <ul>
-                    <li><button>Seat</button></li>
-                    <li><button>Seat</button></li>
-                    <li><button>Seat</button></li>
-                    <li><button>Seat</button></li>
-                    <li><button>Seat</button></li>
-                    <li><button>Seat</button></li>
-                    <li><button>Seat</button></li>
-                    <li><button>Seat</button></li>
-                    <li><button>Seat</button></li>
-                </ul>
-            <!-- templating will be used to generate this later v-->
-        </div>
+        <ul>
+          <li><button>Seat</button></li>
+          <li><button>Seat</button></li>
+          <li><button>Seat</button></li>
+          <li><button>Seat</button></li>
+          <li><button>Seat</button></li>
+          <li><button>Seat</button></li>
+          <li><button>Seat</button></li>
+          <li><button>Seat</button></li>
+          <li><button>Seat</button></li>
+        </ul>
 
+        <ul>
+          <li><button>Seat</button></li>
+          <li><button>Seat</button></li>
+          <li><button>Seat</button></li>
+          <li><button>Seat</button></li>
+          <li><button>Seat</button></li>
+          <li><button>Seat</button></li>
+          <li><button>Seat</button></li>
+          <li><button>Seat</button></li>
+          <li><button>Seat</button></li>
+        </ul>
+        <!-- templating will be used to generate this later v-->
+      </div>
     </div>
-    <script src="booking.js" ></script>
-</body>
+    <script src="booking.js"></script>
+    <script src="test.js"></script>
+  </body>
 </html>

@@ -9,7 +9,7 @@ body{
    
 }
 
-.nav-bar {
+.nav-bar ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -22,6 +22,19 @@ body{
     margin-bottom: 50px;
 }
 
-.nav-bar ul{
-    
+.seats-view ul{
+    list-style-type: none;
+    float: left;
+}
+
+.available{
+    background-color: greenyellow;
+}
+
+.taken{
+    background-color: red;
+}
+
+.selected{
+    background-color: burlywood;
 }

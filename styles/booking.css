@@ -1,40 +1,38 @@
-body{
-    background-color: antiquewhite;
+body {
+  background-color: antiquewhite;
 }
 
-.page-body{
-    background-color: white;
-    width: 1000px;
-    margin-left: 400px;
-   
+.page-body {
+  background-color: white;
+  width: 1000px;
+  margin-left: 400px;
 }
 
-.nav-bar ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-   
-  }
-
-.nav-bar li{
-    float: left;
-    width: 25%;
-    margin-bottom: 50px;
+.nav-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-.seats-view ul{
-    list-style-type: none;
-    float: left;
+.nav-bar li {
+  float: left;
+  width: 25%;
+  margin-bottom: 50px;
 }
 
-.available{
-    background-color: greenyellow;
+.seats-view ul {
+  list-style-type: none;
+  float: left;
 }
 
-.taken{
-    background-color: red;
+.available {
+  background-color: greenyellow;
 }
 
-.selected{
-    background-color: burlywood;
+.taken {
+  background-color: red;
+}
+
+.selected {
+  background-color: burlywood;
 }

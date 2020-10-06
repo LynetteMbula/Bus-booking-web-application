@@ -1,9 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Booking from "./Booking";
 //import "./index.css";
-
 ReactDOM.render(
-  <React.StrictMode>this is index page</React.StrictMode>,
+  <React.StrictMode>
+    <Booking />
+  </React.StrictMode>,
   document.getElementById("root")
 );
 

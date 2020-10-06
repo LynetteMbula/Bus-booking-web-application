@@ -24,10 +24,29 @@ body {
   list-style-type: none;
   float: left;
 }
-
-.seats-view ul li button {
+.seats-view table {
+  padding: 10px;
+  border-spacing: 20px;
+}
+.seats-view table tr td button {
   width: 50px;
   height: 50px;
+}
+.seats-view table tr td {
+  text-align: center;
+}
+.seats-view table tr td.space {
+  border: 0;
+  width: 100px;
+}
+.seats-view table tr td.blank-cell {
+  border: 0;
+  width: 100px;
+}
+
+table {
+  float: left;
+  border-top: 0px;
 }
 
 .available {
@@ -40,4 +59,12 @@ body {
 
 .selected {
   background-color: burlywood;
+}
+
+.driver-seat {
+  background-color: aquamarine;
+}
+
+.blabk-cell {
+  border: 0;
 }

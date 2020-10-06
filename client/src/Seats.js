@@ -6,11 +6,11 @@ const Seats = (props) => {
 
   //let [isSelected, setisSelected] = useState(false);
   return (
-    <li>
+    <td>
       <button className={props.className} onClick={props.onClick}>
         {props.seatNo}
       </button>
-    </li>
+    </td>
   );
 };
 

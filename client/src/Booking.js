@@ -64,50 +64,82 @@ const Booking = () => {
           required to purchase a boarding ticket.
         </p>
         <div class="seats-view">
-          <ul class="col1">
-            {renderSeats(0)}
-            {renderSeats(1)}
-            {renderSeats(2)}
-            {renderSeats(3)}
-            {renderSeats(4)}
-            {renderSeats(5)}
-            {renderSeats(6)}
-            {renderSeats(7)}
-            {renderSeats(8)}
-          </ul>
-          <ul class="col1">
-            {renderSeats(9)}
-            {renderSeats(10)}
-            {renderSeats(11)}
-            {renderSeats(12)}
-            {renderSeats(13)}
-            {renderSeats(14)}
-            {renderSeats(15)}
-            {renderSeats(16)}
-            {renderSeats(17)}
-          </ul>
-          <ul class="col1">
-            {renderSeats(18)}
-            {renderSeats(19)}
-            {renderSeats(20)}
-            {renderSeats(21)}
-            {renderSeats(22)}
-            {renderSeats(23)}
-            {renderSeats(24)}
-            {renderSeats(25)}
-            {renderSeats(26)}
-          </ul>
-          <ul class="col1">
-            {renderSeats(27)}
-            {renderSeats(28)}
-            {renderSeats(29)}
-            {renderSeats(30)}
-            {renderSeats(31)}
-            {renderSeats(32)}
-            {renderSeats(33)}
-            {renderSeats(34)}
-            {renderSeats(35)}
-          </ul>
+          <table>
+            <tr>
+              <td>sdsd</td>
+            </tr>
+          </table>
+          <table border="5px">
+            <tr>
+              <td colSpan="2" className="blank-cell"></td>
+              <td className="driver-seat">Driver</td>
+              <td colSpan="2" className="blank-cell"></td>
+            </tr>
+            <tr>
+              {renderSeats(0)}
+              {renderSeats(1)}
+
+              <td className="space"></td>
+              {renderSeats(2)}
+              {renderSeats(3)}
+            </tr>
+            <tr>
+              {renderSeats(4)}
+              {renderSeats(5)}
+              <td className="space"></td>
+              {renderSeats(6)}
+              {renderSeats(7)}
+            </tr>
+            <tr>
+              {renderSeats(8)}
+              {renderSeats(9)}
+              <td className="space"></td>
+              {renderSeats(10)}
+              {renderSeats(11)}
+            </tr>
+            <tr>
+              {renderSeats(12)}
+              {renderSeats(13)}
+              <td className="space"></td>
+              {renderSeats(14)}
+              {renderSeats(15)}
+            </tr>
+            <tr>
+              {renderSeats(16)}
+              {renderSeats(17)}
+              <td className="space"></td>
+              {renderSeats(18)}
+              {renderSeats(19)}
+            </tr>
+            <tr>
+              {renderSeats(20)}
+              {renderSeats(21)}
+              <td className="space"></td>
+              {renderSeats(22)}
+              {renderSeats(23)}
+            </tr>
+            <tr>
+              {renderSeats(24)}
+              {renderSeats(25)}
+              <td className="space"></td>
+              {renderSeats(26)}
+              {renderSeats(27)}
+            </tr>
+            <tr>
+              {renderSeats(28)}
+              {renderSeats(29)}
+              <td className="space"></td>
+              {renderSeats(30)}
+              {renderSeats(31)}
+            </tr>
+            <tr>
+              {renderSeats(32)}
+              {renderSeats(33)}
+              <td className="space"></td>
+              {renderSeats(34)}
+              {renderSeats(35)}
+            </tr>
+          </table>
           <ul class="help-icons">
             <li>
               <button className="available">Available</button>
@@ -120,6 +152,7 @@ const Booking = () => {
             </li>
           </ul>
         </div>
+        {/* add a send button for seelcted seats, it will be filtered from the isSelected array[] */}
       </div>
     </div>
   );

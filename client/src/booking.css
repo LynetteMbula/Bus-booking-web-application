@@ -44,6 +44,17 @@ body {
   width: 100px;
 }
 
+.seats-view table tr td.driver-seat {
+  vertical-align: middle;
+}
+
+.seats-view table tr td img {
+  vertical-align: middle;
+  margin-left: 5px;
+  width: 30px;
+  height: 35px;
+}
+
 table {
   float: left;
   border-top: 0px;

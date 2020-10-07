@@ -12,10 +12,11 @@ const Booking = () => {
   let seatsView = [];
   let [isSelected, setIsSelected] = useState(() => Array(36).fill(false));
 
-  const seatLetter = ["A", "B", "C", "D", "E", "F", "G", "H", "I"];
+  //const seatLetter = ["A", "B", "C", "D", "E", "F", "G", "H", "I"];
+  const seatLetter = ["A", "B", "C", "D"];
 
   for (let a = 1; a <= 9; a++) {
-    for (let i = 0; i < 9; i++) {
+    for (let i = 0; i < 4; i++) {
       seatsView.push(a + seatLetter[i]);
     }
   }

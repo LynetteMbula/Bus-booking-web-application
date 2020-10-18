@@ -6,7 +6,7 @@ class Footer extends Component {
         //This is the area where you paste your HTML codes
         <section id="myFooter">
 	<section>Footer </section>
-<footer class="footer-distributed"/>
+<footer class="footer-distributed">
 
 			<div class="footer-left">
 
@@ -39,21 +39,21 @@ class Footer extends Component {
 
 			</div>
 
-			<div class="footer-right"/>
+			<div class="footer-right">
 
 				<p>Contact Us</p>
 
-				<form action="#" method="post"/>
+				<form action="#" method="post">
 
-					<input type="text" name="email" placeholder="Email"/>
+					<input type="text" name="email" placeholder="Email" />
 					<textarea name="message" placeholder="Message"></textarea>
 					<button>Send</button>
 
-				<form/>
+				</form>
 
-			<div/>
+			</div>
 
-        <footer/>
+        </footer>
         </section>
 
 

@@ -5,20 +5,18 @@ import { BrowserRouter as Route, Switch} from 'react-router-dom';
 
 //import logo from './logo.svg';
 import './App.css';
-import home from './pages/home';
+import Home from './pages/home';
 import Header from "./components/header";
 import Footer from "./components/footer";
 
 function App() {
   return (
     <div className="wrapper">
-      <Header />
-      
-        <Switch>
-        <Route exact path="/" component={home}/>
-
-        </Switch>
+    <Header />
+    <article>
+     <Home />
       <Footer />
+     </article>
 
     </div>
          

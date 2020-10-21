@@ -26,6 +26,7 @@ nav ul {
 nav ul li {
   float: left;
   position: relative;
+  padding-right: 15px;
 }
 nav ul li a {
   display: block;
@@ -83,9 +84,11 @@ nav ul li ul li a {
   }
   nav ul {
     display: none;
+    
   }
   nav ul li {
     float: none;
+    
   }
   nav ul li a {
     padding: 15px;
@@ -373,10 +376,10 @@ nav ul li ul li a {
 }
 
 /* css for the footer */
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+/* @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700); */
 
 * {
-  font-family: Roboto;
+  font-family: "Lato", sans-serifo;
 }
 
 .footer-distributed {
@@ -411,7 +414,7 @@ section {
 
 .footer-distributed h3 {
   color: #ffffff;
-  font: normal 36px "Roboto", cursive;
+  font: normal 36px "Lato", sans-serif;
   margin: 0 0 10px;
 }
 

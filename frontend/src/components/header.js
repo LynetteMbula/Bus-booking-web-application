@@ -20,20 +20,21 @@ class Header extends Component {
                   <span></span>
                 </a>
               </div>
-              <ul class="nav-list">
-                <Link to="/">
-                  <li>Home</li>{" "}
-                </Link>
-                <Link to="aboutus">
-                  <li>About Us</li>
-                </Link>
-                <Link to="contactus">
-                  <li>Contact Us</li>
-                </Link>
-                <Link to="/makepayment">
-                  <li>Make Payment</li>
-                </Link>
-              </ul>
+
+            <ul class="nav-list">
+              <Link to="">
+              <li>Home</li>{""}
+              </Link>
+              <Link to="aboutus">
+              <li>About </li>
+              </Link>
+              <Link to="contactus">
+              <li>Contact</li>
+              </Link>
+              <Link to="/makepayment">
+              <li>Make Payment</li>
+              </Link>
+            </ul>
             </nav>
           </div>
         </section>

@@ -15,13 +15,9 @@ class Footer extends Component {
 				<p class="footer-links">
 					<a href="#">Home</a>
 					·
-					<a href="#">Blog</a>
-					·
 					<a href="#">Pricing</a>
 					·
 					<a href="#">About</a>
-					·
-					<a href="#">Faq</a>
 					·
 					<a href="#">Contact</a>
 				</p>

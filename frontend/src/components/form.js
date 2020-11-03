@@ -1,11 +1,28 @@
 import React, { Component } from "react";
 
-//this imports the header and footer to home.js
 
-class Home extends Component {
-  render() {
-    return (
-      <section id="busForm">
+class Form extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = {value: ''};
+  
+      this.handleChange = this.handleChange.bind(this);
+      this.handleSubmit = this.handleSubmit.bind(this);
+    }
+  
+    handleChange(event) {
+      this.setState({value: event.target.value});
+    }
+  
+    // handleSubmit(event) {
+    //   alert('A name was submitted: ' + this.state.value);
+    //   event.preventDefault();
+    // }
+  
+    render() {
+      return (
+        <form onSubmit={this.handleSubmit}>
+        <section id="busForm">
         <div id="booking" class="section">
           <div class="section-center">
             <div class="container">
@@ -24,8 +41,8 @@ class Home extends Component {
                           <div class="col-md-6">
                             <div class="form-group">
                               <span class="form-label">Leaving from</span>
-                              <select class="form-control">
-                                <option value=""></option>
+                              <select class="form-control"value={this.state.value} onChange={this.handleChange}>
+                                <option value="" ></option>
                                 <option>Nairobi</option>
                                 <option>Mombasa</option>
                                 <option>Dar es salam</option>
@@ -37,7 +54,7 @@ class Home extends Component {
                           <div class="col-md-6">
                             <div class="form-group">
                               <span class="form-label">Destination to</span>
-                              <select class="form-control">
+                              <select class="form-control" value={this.state.value} onChange={this.handleChange}>
                                 <option value=""></option>
                                 <option>Nairobi</option>
                                 <option>Mombasa</option>
@@ -57,6 +74,7 @@ class Home extends Component {
                                 class="form-control"
                                 type="date"
                                 required
+                                value={this.state.value} onChange={this.handleChange}
                               />
                             </div>
                           </div>
@@ -65,7 +83,7 @@ class Home extends Component {
                           <div class="col-md-4">
                             <div class="form-group">
                               <span class="form-label">Adults (18+)</span>
-                              <select class="form-control">
+                              <select class="form-control" value={this.state.value} onChange={this.handleChange}>
                                 <option value=""></option>
                                 <option>1</option>
                                 <option>2</option>
@@ -79,7 +97,7 @@ class Home extends Component {
                           <div class="col-md-4">
                             <div class="form-group">
                               <span class="form-label">Children (0-17)</span>
-                              <select class="form-control">
+                              <select class="form-control" value={this.state.value} onChange={this.handleChange}>
                                 <option value=""></option>
                                 <option>0</option>
                                 <option>1</option>
@@ -94,7 +112,7 @@ class Home extends Component {
                           <div class="col-md-4">
                             <div class="form-group">
                               <span class="form-label">Travel class</span>
-                              <select class="form-control">
+                              <select class="form-control" value={this.state.value} onChange={this.handleChange}>
                                 <option value=""></option>
                                 <option>Economy class</option>
                                 <option>First class</option>
@@ -116,6 +134,9 @@ class Home extends Component {
         </div>
       </section>
     );
+  
+        </form>
+      );
+    }
   }
-}
-export default Home;
+  export default Form;

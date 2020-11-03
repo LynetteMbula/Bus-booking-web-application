@@ -8,6 +8,19 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: "Lato", sans-serif,
+    
+}
+
+.footer{
+  margin-top: 1rem;
+  padding: 1 rem;
+  background-color: #4fa3e3;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+p{
+  text-align: center;
 }

@@ -7,6 +7,7 @@ import { BrowserRouter as Route, Switch } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home";
 import Header from "./components/header";
+import Form from "./components/form";
 import Footer from "./components/footer";
 import Payment from "./components/Payment";
 
@@ -15,6 +16,7 @@ function App() {
     <div className="wrapper">
       {/* the components for the routes should be enclosed in <section> tag */}
       <Header />
+      <Form/>
       <Switch>
         <Route exact path="/">
           <Home />
@@ -23,8 +25,10 @@ function App() {
           <Payment />
         </Route>
       </Switch>
+      <form/>
       <article>
-        <Footer />
+      <Footer/>
+
       </article>
     </div>
   );

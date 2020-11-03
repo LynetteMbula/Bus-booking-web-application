@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link, Route, Switch } from "react-router-dom";
-import Home from "../pages/Home";
+
 import Payment from "./Payment";
 
 class Header extends Component {

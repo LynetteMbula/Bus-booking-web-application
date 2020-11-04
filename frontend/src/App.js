@@ -5,7 +5,7 @@ import { BrowserRouter as Route, Switch } from "react-router-dom";
 
 //import logo from './logo.svg';
 import "./App.css";
-import Home from "./pages/Home";
+
 import Header from "./components/header";
 import Form from "./components/form";
 import Footer from "./components/footer";
@@ -16,16 +16,16 @@ function App() {
     <div className="wrapper">
       {/* the components for the routes should be enclosed in <section> tag */}
       <Header />
-      <Form/>
+      
       <Switch>
         <Route exact path="/">
-          <Home />
+          <Form/>
         </Route>
         <Route path="/makepayment">
           <Payment />
         </Route>
       </Switch>
-      <form/>
+      
       <article>
       <Footer/>
 

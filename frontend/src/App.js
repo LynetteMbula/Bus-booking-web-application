@@ -10,6 +10,7 @@ import Header from "./components/header";
 import Form from "./components/form";
 import Footer from "./components/footer";
 import Payment from "./components/Payment";
+import Contact from "./Pages/contact";
 
 function App() {
   return (
@@ -18,17 +19,12 @@ function App() {
       <Header />
       
       <Switch>
-        <Route exact path="/">
-          <Form/>
-        </Route>
-        <Route path="/makepayment">
-          <Payment />
-        </Route>
+        <Route exact path="/"><Form/></Route>
+        <Route exact path="/contact"></Route>
+        <Route path="/makepayment"><Payment /></Route>
       </Switch>
-      
       <article>
       <Footer/>
-
       </article>
     </div>
   );

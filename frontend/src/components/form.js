@@ -54,57 +54,57 @@ class Form extends React.Component {
   
     render() {
       return (
-        <form onSubmit={this.handleSubmit}>
-        <section id="busForm">
-        <div id="booking" class="section">
-          <div class="section-center">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="booking-cta">
+        // <form onSubmit={this.handleSubmit}>
+          <section id="busForm">
+          <div id="booking" className="section">
+          <div className="section-center">
+            <div className="container">
+              <div className="row">
+                <div className="col-md-4">
+                  <div className="booking-cta">
                     <h1>Book your Bus today</h1>
                     <p>The easiest and fastest way to book your bus online!</p>
                   </div>
                 </div>
-                <div class="col-md-7 col-md-offset-1">
-                  <div class="booking-form">
+                <div className="col-md-7 col-md-offset-1">
+                  <div className="booking-form">
                     <form>
-                      <div class="form-group">
-                        <div class="row">
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <span class="form-label">Leaving from</span>
-                              <select class="form-control" value={this.state.leaving} onChange={this.handleLeavingChange}>
+                      <div className="form-group">
+                        <div className="row">
+                          <div className="col-md-6">
+                            <div className="form-group">
+                              <span className="form-label">Leaving from</span>
+                              <select className="form-control" value={this.state.leaving} onChange={this.handleLeavingChange}>
                                 <option value="" ></option>
                                 <option>Nairobi</option>
                                 <option>Mombasa</option>
                                 <option>Dar es salam</option>
                                 <option>Dodoma</option>
                               </select>
-                              <span class="select-arrow"></span>
+                              <span className="select-arrow"></span>
                             </div>
                           </div>
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <span class="form-label">Destination to</span>
-                              <select class="form-control" value={this.state.destination} onChange={this.handleDestinationChange}>
+                          <div className="col-md-6">
+                            <div className="form-group">
+                              <span className="form-label">Destination to</span>
+                              <select className="form-control" value={this.state.destination} onChange={this.handleDestinationChange}>
                                 <option value=""></option>
                                 <option>Nairobi</option>
                                 <option>Mombasa</option>
                                 <option>Dar es salam</option>
                                 <option>Dodoma</option>
                               </select>
-                              <span class="select-arrow"></span>
+                              <span className="select-arrow"></span>
                             </div>
                           </div>
                         </div>
-                        <div class="row">
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <span class="form-label">Travel Date</span>
+                        <div className="row">
+                          <div className="col-md-6">
+                            <div className="form-group">
+                              <span className="form-label">Travel Date</span>
 
                               <input
-                                class="form-control"
+                                className="form-control"
                                 type="date"
                                 required
                                 value={this.state.date} onChange={this.handleDateChange}
@@ -112,11 +112,11 @@ class Form extends React.Component {
                             </div>
                           </div>
                         </div>
-                        <div class="row">
-                          <div class="col-md-4">
-                            <div class="form-group">
-                              <span class="form-label">Adults (18+)</span>
-                              <select class="form-control" value={this.state.adults} onChange={this.handleAdultChange}>
+                        <div className="row">
+                          <div className="col-md-4">
+                            <div className="form-group">
+                              <span className="form-label">Adults (18+)</span>
+                              <select className="form-control" value={this.state.adults} onChange={this.handleAdultChange}>
                                 <option value=""></option>
                                 <option>1</option>
                                 <option>2</option>
@@ -124,13 +124,13 @@ class Form extends React.Component {
                                 <option>4</option>
                                 <option>5</option>
                               </select>
-                              <span class="select-arrow"></span>
+                              <span className="select-arrow"></span>
                             </div>
                           </div>
-                          <div class="col-md-4">
-                            <div class="form-group">
-                              <span class="form-label">Children (0-17)</span>
-                              <select class="form-control" value={this.state.children} onChange={this.handleChildrenChange}>
+                          <div className="col-md-4">
+                            <div className="form-group">
+                              <span className="form-label">Children (0-17)</span>
+                              <select className="form-control" value={this.state.children} onChange={this.handleChildrenChange}>
                                 <option value=""></option>
                                 <option>0</option>
                                 <option>1</option>
@@ -139,23 +139,23 @@ class Form extends React.Component {
                                 <option>4</option>
                                 <option>5</option>
                               </select>
-                              <span class="select-arrow"></span>
+                              <span className="select-arrow"></span>
                             </div>
                           </div>
-                          <div class="col-md-4">
-                            <div class="form-group">
-                              <span class="form-label">Travel class</span>
-                              <select class="form-control" value={this.state.class} onChange={this.handleClassChange}>
+                          <div className="col-md-4">
+                            <div className="form-group">
+                              <span className="form-label">Travel class</span>
+                              <select className="form-control" value={this.state.class} onChange={this.handleClassChange}>
                                 <option value=""></option>
                                 <option>Economy class</option>
                                 <option>First class</option>
                               </select>
-                              <span class="select-arrow"></span>
+                              <span className="select-arrow"></span>
                             </div>
                           </div>
                         </div>
-                        <div class="form-btn">
-                          <button type='submit' class="submit-btn">Book Now</button>
+                        <div className="form-btn">
+                          <button type='submit' className="submit-btn">Book Now</button>
                         </div>
                       </div>
                     </form>
@@ -164,12 +164,12 @@ class Form extends React.Component {
               </div>
             </div>
           </div>
-        </div>
+          </div>
       </section>
     );
   
-        </form>
-      );
+        // </form>
+      
     }
   }
   export default Form;

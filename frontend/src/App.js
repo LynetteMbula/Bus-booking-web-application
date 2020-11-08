@@ -17,14 +17,20 @@ function App() {
     <div className="wrapper">
       {/* the components for the routes should be enclosed in <section> tag */}
       <Header />
-      
+
       <Switch>
-        <Route exact path="/"><Form/></Route>
-        <Route exact path="/contact"></Route>
-        <Route path="/makepayment"><Payment /></Route>
+        <Route exact path="/">
+          <Form />
+        </Route>
+        <Route path="/contact">
+          <Contact />
+        </Route>
+        <Route path="/makepayment">
+          <Payment />
+        </Route>
       </Switch>
       <article>
-      <Footer/>
+        <Footer />
       </article>
     </div>
   );

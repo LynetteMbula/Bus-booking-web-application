@@ -21,20 +21,21 @@ class Header extends Component {
                 </a>
               </div>
 
-            <ul className="nav-list">
-              <Link to="">
-              <li>Home</li>{""}
-              </Link>
-              <Link to="aboutus">
-              <li>About </li>
-              </Link>
-              <Link to="/Pages/contact">
-              <li>Contact</li>
-              </Link>
-              <Link to="/makepayment">
-              <li>Make Payment</li>
-              </Link>
-            </ul>
+              <ul className="nav-list">
+                <Link to="">
+                  <li>Home</li>
+                  {""}
+                </Link>
+                <Link to="aboutus">
+                  <li>About </li>
+                </Link>
+                <Link to="/contact">
+                  <li>Contact</li>
+                </Link>
+                <Link to="/makepayment">
+                  <li>Make Payment</li>
+                </Link>
+              </ul>
             </nav>
           </div>
         </section>

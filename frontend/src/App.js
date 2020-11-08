@@ -10,6 +10,7 @@ import Header from "./components/header";
 import Form from "./components/form";
 import Footer from "./components/footer";
 import Payment from "./components/Payment";
+import Booking from "./components/Booking";
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
         </Route>
         <Route path="/makepayment">
           <Payment />
+        </Route>
+        <Route path="/busbook">
+          <Booking />
         </Route>
       </Switch>
       <form/>

@@ -1,7 +1,8 @@
 /* the custom css are added at the bottom of this stylesheet */
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: Poppins-Regular;
+  src: url('../fonts/poppins/Poppins-Regular.ttf');
 }
 
 /* css for navigation bar */
@@ -13,7 +14,8 @@ $breakpoint determines at which width the media query breakpoint will take effec
 
 body {
   /* background-color: #63D6E0; */
-  font-family: "Lato", sans-serif;
+  font-family: Poppins-Regular;
+  src: url('../fonts/poppins/Poppins-Regular.ttf');
 }
 nav {
   float: right;
@@ -192,7 +194,8 @@ nav ul li ul li a {
 }
 
 #booking {
-  font-family: "Lato", sans-serif;
+  font-family: Poppins-Regular;
+  src: url('../fonts/poppins/Poppins-Regular.ttf');
   background-image: url("../img/roadimage.jpeg");
   background-size: cover;
   background-position: center;

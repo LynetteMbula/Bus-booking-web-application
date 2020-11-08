@@ -9,32 +9,33 @@ class Header extends Component {
       //This is the area where you paste your HTML codes
 
       <header>
-        <section class="navigation">
-          <div class="nav-container">
-            <div class="brand">
+        <section className="navigation">
+          <div className="nav-container">
+            <div className="brand">
               <Link to="/">LOGO</Link>
             </div>
             <nav>
-              <div class="nav-mobile">
+              <div className="nav-mobile">
                 <a id="nav-toggle" href="#!">
                   <span></span>
                 </a>
               </div>
 
-            <ul class="nav-list">
-              <Link to="">
-              <li>Home</li>{""}
-              </Link>
-              <Link to="aboutus">
-              <li>About </li>
-              </Link>
-              <Link to="contactus">
-              <li>Contact</li>
-              </Link>
-              <Link to="/makepayment">
-              <li>Make Payment</li>
-              </Link>
-            </ul>
+              <ul className="nav-list">
+                <Link to="">
+                  <li>Home</li>
+                  {""}
+                </Link>
+                <Link to="aboutus">
+                  <li>About </li>
+                </Link>
+                <Link to="/contact">
+                  <li>Contact</li>
+                </Link>
+                <Link to="/makepayment">
+                  <li>Make Payment</li>
+                </Link>
+              </ul>
             </nav>
           </div>
         </section>
